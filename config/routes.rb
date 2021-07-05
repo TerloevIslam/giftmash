@@ -6,9 +6,6 @@ Rails.application.routes.draw do
       get :results
       get :vote
     end
-    member do
-      post :upvote
-      post :downvote
-    end
+    post :upvote, on: :member
   end
 end

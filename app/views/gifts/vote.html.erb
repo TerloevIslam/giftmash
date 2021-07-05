@@ -3,9 +3,10 @@
 </div>
   <div class="row">
     <div class="col">
-      <%= link_to image_tag(@left.img_url, style: "max-width: 600px"), upvote_gift_path(@left), method: :post %>
+      <%= link_to image_tag(@left.img_url, style: "max-width:600px"), upvote_gift_path(@left), method: :post %>
     </div>
     <div class="col">
       <%= link_to image_tag(@right.img_url, style: "max-width: 600px"), upvote_gift_path(@right), method: :post %>
     </div>
 </div>
+<%= link_to "Skip", root_path, class: "btn btn-primary" %>
