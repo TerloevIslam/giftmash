@@ -3,8 +3,8 @@ class CreateGifts < ActiveRecord::Migration[6.0]
     create_table :gifts do |t|
       t.string :name
       t.string :img_url
-      t.integer :upvotes
-      t.integer :downvotes
+      t.integer :upvotes, default: 0
+      t.integer :downvotes, default: 0
 
       t.timestamps
     end

@@ -1,29 +1,17 @@
 <table class="table">
   <thead>
     <tr>
-      <th scope="col">#</th>
       <th scope="col">Giftname</th>
       <th scope="col">Upvotes</th>
       <th scope="col">Downvotes</th>
     </tr>
   </thead>
   <tbody>
+    <% @gifts.each do |gift|%>
     <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <td><%= gift.name %></td>
+      <td><%= gift.upvotes %></td>
+      <td><%= gift.downvotes %></td>
     </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
+    <% end %>
 </table>
