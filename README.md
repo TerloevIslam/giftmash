@@ -1,24 +1,14 @@
 # README
+* Ruby version: 2.7.1
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Rails version: 6.0.4
 
-Things you may want to cover:
+* Database: NoSQL
 
-* Ruby version
+* Bootstrap: 4
 
-* System dependencies
+run rails db:migrate
 
-* Configuration
+to import gifts from gifts.csv which is attached just run:
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+rake db:seed
