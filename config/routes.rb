@@ -6,7 +6,7 @@ Rails.application.routes.draw do
       get :results
       get :vote
       patch :upvote_gift
-      patch :downvote_gift 
+      patch :downvote_gift
     end
   end
 end

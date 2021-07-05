@@ -14,6 +14,7 @@ ActiveRecord::Schema.define(version: 2021_07_05_083357) do
 
   create_table "gifts", force: :cascade do |t|
     t.string "name"
+    t.string "img_url"
     t.integer "upvotes"
     t.integer "downvotes"
     t.datetime "created_at", precision: 6, null: false
