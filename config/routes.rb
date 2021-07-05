@@ -5,8 +5,10 @@ Rails.application.routes.draw do
     collection do
       get :results
       get :vote
-      patch :upvote_gift
-      patch :downvote_gift
+    end
+    member do
+      post :upvote
+      post :downvote
     end
   end
 end

@@ -1,1 +1,11 @@
-<h1>Vote</h1>
+<div class="d-flex justify-content-center">
+<h1>What do you like better?</h1>
+</div>
+  <div class="row">
+    <div class="col">
+      <%= link_to image_tag(@left.img_url, style: "max-width: 600px"), upvote_gift_path(@left), method: :post %>
+    </div>
+    <div class="col">
+      <%= link_to image_tag(@right.img_url, style: "max-width: 600px"), upvote_gift_path(@right), method: :post %>
+    </div>
+</div>
